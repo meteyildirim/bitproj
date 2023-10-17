@@ -1,10 +1,10 @@
 import React from "react";
-import HomePage from "./pages/user/home-page";
+import CustomRoutes from "./router/custom-routes";
 
 const App = () => {
   return (
     <>
-      <HomePage />
+      <CustomRoutes />
     </>
   );
 };
