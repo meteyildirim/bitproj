@@ -3,6 +3,8 @@ import { createSlice } from "@reduxjs/toolkit";
 // name
 // initial state
 // reducer tanimla
+// actions olustur
+// slice export et
 export const authSlice = createSlice({
   name: "auth",
   initialState: {
