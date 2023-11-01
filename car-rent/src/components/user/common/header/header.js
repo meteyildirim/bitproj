@@ -5,6 +5,7 @@ import logo from "../../../../assets/img/logo/logo.png";
 import { settings } from "../../../../helpers/settings";
 import Menubar from "./menubar";
 import Topbar from "./topbar";
+import "./header.scss";
 const Header = () => {
   return (
     <>
