@@ -1,7 +1,7 @@
 import React from "react";
 
 const Menubar = () => {
-  return <div>Menubar</div>;
+  return <div className="menubar">Menubar</div>;
 };
 
 export default Menubar;
