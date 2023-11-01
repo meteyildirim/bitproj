@@ -14,10 +14,10 @@ const Header = () => {
           <div className="logo">
             <img src={logo} alt={settings.siteName} className="img-fluid" />
           </div>
-        </div>
-        <div className="menus">
-          <Topbar />
-          <Menubar />
+          <div className="menus">
+            <Topbar />
+            <Menubar />
+          </div>
         </div>
       </Container>
     </>

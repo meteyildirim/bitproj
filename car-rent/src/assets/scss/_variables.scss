@@ -6,7 +6,13 @@ $color5: rgb(123, 0, 145, 0.5);
 $color6: rgb(203, 179, 0, 0.5);
 
 /*BOOTSTRAP */
-
-$primary: $color1; // bootstrap in orjinal degerlerini degistiriyoruz
+// bootstrap in orjinal degerlerini degistiriyoruz
+// asagidaki degiskenleri bootstrap/scc/_varibles da bulunur ve burada istedigimiz sekilde overwrite yapilir
+$primary: $color1;
 $secondary: $color2;
 $font-family-sans-serif: "Nunito";
+$navbar-light-color: $color1;
+$navbar-light-hover-color: $color2;
+$navbar-light-active-color: $color2;
+$nav-link-font-weight: 600;
+$border-radius: 0;
