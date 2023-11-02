@@ -1,8 +1,15 @@
 import React from "react";
 import UserTemplate from "../../templates/user-template";
+import Slider from "../../components/user/home/slider";
+
+
 
 const HomePage = () => {
-  return <UserTemplate>HomePage</UserTemplate>;
+  return (
+    <UserTemplate>
+      <Slider />
+    </UserTemplate>
+  );
 };
 
 export default HomePage;
