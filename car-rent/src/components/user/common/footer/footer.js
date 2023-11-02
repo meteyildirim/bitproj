@@ -15,8 +15,8 @@ const Footer = () => {
   return (
     <footer className="footer">
       <Container className="container">
-        <Row>
-          <Col md={6} lg={3}>
+        <Row className="g-5">
+          <Col xl={3} lg={6}>
             <Link to="/">
               <img src={logo} alt=""></img>
             </Link>
@@ -25,7 +25,7 @@ const Footer = () => {
               free extras online. Choose from one of our new car models.
             </p>
           </Col>
-          <Col md={6} lg={3}>
+          <Col xl={3} lg={6}>
             <h2>Quick Links</h2>
             <ul>
               <li>
@@ -60,7 +60,7 @@ const Footer = () => {
               </li>
             </ul>
           </Col>
-          <Col md={6} lg={3}>
+          <Col xl={3} lg={6}>
             <h2>Working Hours</h2>
             <ul>
               <li>Mo-Fri: 09:00AM - 09:00PM</li>
@@ -68,7 +68,7 @@ const Footer = () => {
               <li>Sunday: 09:00AM - 05:00PM</li>
             </ul>
           </Col>
-          <Col md={6} lg={3}>
+          <Col xl={3} lg={6}>
             <h2>Contact us</h2>
             <ContactInfo />
           </Col>
