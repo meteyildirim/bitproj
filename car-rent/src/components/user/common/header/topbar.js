@@ -15,42 +15,40 @@ const Topbar = () => {
       <ul className="contact-bar">
         <li>
           <a href={`tel:${settings.phone1}`}>
-            {" "}
             <FaHeadphonesAlt />
             {settings.phone1}
           </a>
         </li>
         <li>
           <a href={`mailto:${settings.email}`}>
-            {" "}
             <FaRegEnvelopeOpen />
-            {settings.email}
+            <span className="d-none d-md-inline">{settings.email}</span>
           </a>
         </li>
       </ul>
 
       <ul className="social-bar">
-        <li>
+        <li className="d-none d-md-inline">
           <a href="https://instagram.com">
             <FaInstagram />
           </a>
         </li>
-        <li>
+        <li className="d-none d-md-inline">
           <a href="https://facebook.com">
             <FaFacebook />
           </a>
         </li>
-        <li>
+        <li className="d-none d-md-inline">
           <a href="https://linkedin.com">
             <FaLinkedin />
           </a>
         </li>
-        <li>
+        <li className="d-none d-md-inline">
           <a href="https://twitter.com">
             <FaTwitter />
           </a>
         </li>
-        <li>
+        <li className="d-none d-md-inline">
           <a href="https://youtube.com">
             <FaYoutube />
           </a>

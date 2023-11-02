@@ -1,11 +1,16 @@
 @use "../../../../assets/scss/variables" as v;
 @use "../../../../assets/scss/mixins" as m;
 // yukaridaki dosyalardaki bazi bilgileri kullanmak icin import ettik
+$breakpoint: 992px;
 
 .header {
   @include m.flexbox($align-items: stretch);
   background-color: v.$color4;
 
+  @media (max-width: $breakpoint) {
+    @include m.flexbox(column, space-between, stretch);
+    position: relative;
+  }
   .logo {
     background-color: v.$color1;
   }
@@ -19,6 +24,10 @@
       @include m.flexbox(row, space-between, center, 1rem);
       flex: 1;
       border-bottom: 1px dotted v.$color3;
+      @media (max-width: $breakpoint) {
+        border-bottom: 0px;
+        @include m.flexbox(column, space-between, center, 1rem);
+      }
       ul {
         @include m.reset-list();
 
@@ -44,10 +53,28 @@
     }
     .menubar {
       flex: 1;
-      font-size: 1rem;
+
+      @media (max-width: $breakpoint) {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        left: 1rem;
+
+        .container {
+          justify-content: flex-end;
+        }
+        .navbar-collapse {
+          background-color: v.$color4;
+          padding: 1rem;
+          margin-top: 3rem;
+        }
+      }
 
       a {
         @include m.flexbox($align-items: center, $gap: 0.5rem);
+      }
+      .navbar-toggler {
+        background-color: v.$color2;
       }
     }
   }

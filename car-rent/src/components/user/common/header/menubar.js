@@ -15,7 +15,7 @@ const Menubar = () => {
   return (
     <div className="menubar">
       <Navbar expand="lg">
-        <Container>
+        <Container className="ps-0">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
