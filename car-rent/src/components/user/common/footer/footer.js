@@ -10,6 +10,7 @@ import {
   MdDirectionsCar,
   MdOutlinePrivacyTip,
 } from "react-icons/md";
+import ContactInfo from "../../contact/contact-info";
 const Footer = () => {
   return (
     <footer className="footer">
@@ -59,8 +60,18 @@ const Footer = () => {
               </li>
             </ul>
           </Col>
-          <Col md={6} lg={3}></Col>
-          <Col md={6} lg={3}></Col>
+          <Col md={6} lg={3}>
+            <h2>Working Hours</h2>
+            <ul>
+              <li>Mo-Fri: 09:00AM - 09:00PM</li>
+              <li>Saturday: 09:00AM - 07:00PM</li>
+              <li>Sunday: 09:00AM - 05:00PM</li>
+            </ul>
+          </Col>
+          <Col md={6} lg={3}>
+            <h2>Contact us</h2>
+            <ContactInfo />
+          </Col>
         </Row>
       </Container>
     </footer>
