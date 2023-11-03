@@ -36,4 +36,12 @@
       }
     }
   }
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: v.$color2;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: v.$color2;
+  }
 }

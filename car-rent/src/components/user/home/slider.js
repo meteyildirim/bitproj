@@ -4,12 +4,24 @@ import "./slider.scss";
 
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "swiper/css/effect-fade";
 
+import { Navigation, Pagination, EffectFade, Autoplay } from "swiper/modules";
 import slides from "./slider.json";
 
 const Slider = () => {
+  const pagination = {
+    clickable: true,
+  };
   return (
-    <Swiper className="slider">
+    <Swiper
+      navigation={true}
+      effect={"fade"}
+      autoplay={{ delay: 5000, disableOnInteraction: false }}
+      pagination={pagination}
+      modules={[Navigation, Pagination, EffectFade, Autoplay]}
+      className="slider"
+    >
       {slides.map((slide) => (
         <SwiperSlide key={slide.id}>
           <div className="content">
