@@ -1,0 +1,10 @@
+@use "../../../../assets/scss/_mixins.scss" as m;
+@use "../../../../assets/scss/variables" as v;
+.offer-item {
+  @include m.flexbox($gap: 1rem);
+  .icon {
+    
+  }
+  .content {
+  }
+}

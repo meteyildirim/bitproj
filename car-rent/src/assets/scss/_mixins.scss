@@ -16,3 +16,15 @@
   align-items: $align-items;
   gap: $gap;
 }
+
+@mixin bg-image(
+  $url,
+  $size: cover,
+  $position: center center,
+  $repeat: no-repeat
+) {
+  background-image: url($url);
+  background-repeat: $repeat;
+  background-size: $size;
+  background-position: $position;
+}

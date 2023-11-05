@@ -1,22 +1,18 @@
-@use "../../../assets/scss/variables" as v;
-@use "../../../assets/scss/mixins" as m;
-@use "../../../assets/scss/variables" as v;
-
-.section-header {
-  text-align: center;
-
-  h2 {
-    font-weight: 400;
-    font-size: 3rem;
-    color: v.$color2;
-    text-transform: uppercase;
-
-    span {
-      font-family: 800;
+@use "../../../../assets/scss/_mixins.scss" as m;
+@use "../../../../assets/scss/variables" as v;
+.best-offers {
+  .offers {
+    padding: 6rem 0;
+    position: relative;
+    &::after {
+      @include m.bg-image("../../../../assets/img/car/bg.jpg");
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      opacity: 0.1;
     }
-  }
-
-  p {
-    color: v.$color1;
   }
 }
